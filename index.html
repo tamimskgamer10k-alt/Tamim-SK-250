@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Tamimmate — Everything You Need, All in One Place</title>
+    <meta name="description" content="Tamimmate is a universal all-in-one web hub: high-performance media downloader, video & audio player, movie catalog, app directory, file manager, sandbox browser, and AI assistant." />
+    <meta name="theme-color" content="#E50914" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Tamimmate" />
+    
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Tamimmate — Everything You Need, All in One Place" />
+    <meta property="og:description" content="Universal media hub, downloader, file manager, entertainment catalog, built-in browser, and AI assistant." />
+    <meta property="og:site_name" content="Tamimmate" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Tamimmate — Everything You Need, All in One Place" />
+    <meta name="twitter:description" content="Universal media hub, downloader, file manager, entertainment catalog, built-in browser, and AI assistant." />
+
+    <!-- Google Fonts for sleek modern typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <script>
+      // Gracefully suppress benign dev HMR WebSocket disconnection errors
+      window.addEventListener('unhandledrejection', function(e) {
+        if (e.reason && (e.reason.message?.includes('WebSocket') || String(e.reason).includes('WebSocket'))) {
+          e.preventDefault();
+        }
+      });
+      window.addEventListener('error', function(e) {
+        if (e.message && (e.message.includes('WebSocket') || e.filename?.includes('@vite/client'))) {
+          e.preventDefault();
+        }
+      });
+    </script>
+  </head>
+  <body class="bg-[#0B0C10] text-neutral-100 antialiased selection:bg-red-600 selection:text-white font-sans overflow-x-hidden">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

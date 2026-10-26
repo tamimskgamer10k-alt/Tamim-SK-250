@@ -1,0 +1,6 @@
+{
+  "name": "Tamimmate",
+  "description": "Everything You Need, All in One Place — Universal media hub, downloader, file manager, entertainment catalog, built-in browser, and AI assistant.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

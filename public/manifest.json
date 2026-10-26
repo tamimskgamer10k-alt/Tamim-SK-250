@@ -1,0 +1,39 @@
+{
+  "id": "/",
+  "name": "Tamimmate — Everything You Need, All in One Place",
+  "short_name": "Tamimmate",
+  "description": "Universal web hub: media downloader, video & audio player, movie catalog, app directory, file manager, sandbox browser, and AI assistant.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#E50914",
+  "background_color": "#0B0C10",
+  "orientation": "any",
+  "categories": ["media", "entertainment", "utilities", "productivity"],
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
